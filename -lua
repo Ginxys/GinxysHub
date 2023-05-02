@@ -1,0 +1,296 @@
+
+
+
+
+
+_G.Key = "21442132"
+
+
+-- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "DOORS SCRIPT",
+    Desc = "EXECUTED DOORS SCRIPT",
+    Reason = 'LOADING SCRIPT',
+    Image = "https://www.funny-emoticons.com/files/smileys-emoticons/funny-emoticons/21-patiently-waiting.png",
+})
+
+wait(5)
+-- Achievement
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "YAYA!!!!",
+    Desc = "SCRIPT LOADED",
+    Reason = 'ENJOY!',
+    Image = "https://w7.pngwing.com/pngs/400/997/png-transparent-emoji-doing-thumbs-up-illustration-emoji-emoticon-smiley-like-button-thumb-signal-double-happiness-computer-icons-text-messaging-smile.png",
+})
+
+
+
+wait(0.1)
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+
+local Window = Rayfield:CreateWindow({
+   Name = "GINXYS - Doors Script",
+   LoadingTitle = "Loading Your Mum...",
+   LoadingSubtitle = "By GIXNYS bruh",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "GINXYS Hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "H4tm9nVc", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Ginxys lua script",
+      Subtitle = "Key System",
+      Note = "Key in your mum bruh",
+      FileName = "GINXYS - Key",
+      SaveKey = true,
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "21442132"
+   }
+})
+
+
+Rayfield:Notify({
+   Title = "Script From your mum",
+   Content = "Thank you for using our script!",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okey!",
+         Callback = function()
+         print("The user called ME YOUR MUM")
+      end
+   },
+},
+})
+
+--tabs bruh
+local Tab = Window:CreateTab("Main", 4483362458)
+local VisualsTab = Window:CreateTab("Visuals", 4483345998)
+local RemoveTab = Window:CreateTab("Remove", 7734068321)
+local PlayerTab = Window:CreateTab("Player", 4483345998)
+local Tab2 = Window:CreateTab("Credits", 4483362458)
+local NotifyTab = Window:CreateTab("Notify", 4483362458)
+
+
+
+
+local Button = Tab:CreateButton({
+   Name = "Doors Move Objects Script (broking game)",
+   Callback = function()
+      loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/32124c091113dbb820d01580fd9d29a3/raw/21c5cdf7dfe47aa5466445f2c7f7a05eb616908a/dwlwdwdw", true))()
+   end,
+})
+
+
+VisualsTab:CreateToggle({
+   Name = "FullBright",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/zETS9iAa", true))()
+   end,
+})
+
+VisualsTab:CreateToggle({
+   Name = "AntiEyes",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/XhHmisyw", true))()
+   end,
+})
+
+
+VisualsTab:CreateToggle({
+   Name = "Door esp",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/yP2Ua4Sf", true))()
+   end,
+})
+
+
+
+local Button = Tab:CreateButton({
+   Name = "God mode",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/GodModeByNerd.lua"))()
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Enable Reset Button",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/U3sZBmiQ"))()
+   end,
+})
+
+VisualsTab:CreateToggle({
+   Name = "Player Esp",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/BED0fMFg"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Noclip bypasser",
+   Callback = function()
+      loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/8c40569e425675d61cb84a7e160763b6/raw/4c624fa34f81dd7213dc695e61e0ea8b6bc566bc/Noclip%2520bypasser"))()
+   end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Paragraph = Tab2:CreateParagraph({Title = "Youtube Channel", Content = "https://www.youtube.com/channel/UC8bYwOZDyvPnNO4mMDVbfkQ"})
+local Paragraph = Tab2:CreateParagraph({Title = "Website", Content = "https://r.mtdv.me/SKIBIDI"})
+local Paragraph = Tab2:CreateParagraph({Title = "PROFILE", Content = "https://www.roblox.com/users/3203842356/profile"})
+
+
+local Button = Tab2:CreateButton({
+   Name = "Credits",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/AMYFy1Eb", true))()
+   end,
+})
+
+
+local KeyChams = {}
+VisualsTab:CreateToggle({
+	Name = "Key Chams",
+	Default = false,
+    Flag = "KeyToggle",
+    Save = true,
+	Callback = function(Value)
+		for i,v in pairs(KeyChams) do
+            v.Enabled = Value
+        end
+	end    
+})
+
+local function ApplyKeyChams(inst)
+    wait()
+    local Cham = Instance.new("Highlight")
+    Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    Cham.FillColor = Color3.new(0.980392, 0.670588, 0)
+    Cham.FillTransparency = 0.5
+    Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
+    Cham.Parent = game:GetService("CoreGui")
+    Cham.Adornee = inst
+    Cham.Enabled = Rayfield.Flags["KeyToggle"].Value
+    Cham.RobloxLocked = true
+    return Cham
+end
+
+local KeyCoroutine = coroutine.create(function()
+    workspace.CurrentRooms.DescendantAdded:Connect(function(inst)
+        if inst.Name == "KeyObtain" then
+            table.insert(KeyChams,ApplyKeyChams(inst))
+        end
+    end)
+end)
+for i,v in ipairs(workspace:GetDescendants()) do
+    if v.Name == "KeyObtain" then
+        table.insert(KeyChams,ApplyKeyChams(v))
+    end
+end
+coroutine.resume(KeyCoroutine)
+
+
+local BookChams = {}
+VisualsTab:CreateToggle({
+    Name = "Book Chams",
+    Default = false,
+    Flag = "BookToggle",
+    Save = true,
+    Callback = function(Value)
+        for i,v in pairs(BookChams) do
+            v.Enabled = Value
+        end
+    end    
+})
+
+local function ApplyBookChams(inst)
+    if inst:IsDescendantOf(game:GetService("Workspace").CurrentRooms:FindFirstChild("50")) and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value == 50 then
+        wait()
+        local Cham = Instance.new("Highlight")
+        Cham.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+        Cham.FillColor = Color3.new(0, 1, 0.749019)
+        Cham.FillTransparency = 0.5
+        Cham.OutlineColor = Color3.new(0.792156, 0.792156, 0.792156)
+        Cham.Parent = game:GetService("CoreGui")
+        Cham.Enabled = Rayfield.Flags["BookToggle"].Value
+        Cham.Adornee = inst
+        Cham.RobloxLocked = true
+        return Cham
+    end
+end
+
+local BookCoroutine = coroutine.create(function()
+    task.wait(1)
+    for i,v in pairs(game:GetService("Workspace").CurrentRooms["50"].Assets:GetDescendants()) do
+        if v.Name == "LiveHintBook" then
+            table.insert(BookChams,ApplyBookChams(v))
+        end
+    end
+end)
+   if Rayfield.Flags["BookToggle"].Value == true then
+            if LatestRoom.Value == 50 then
+            end
+end
+       coroutine.resume(BookCoroutine)
+	   
+
+PlayerTab:CreateSlider({
+    Name = "SpeedAdd",
+    Range = {0, 6}, 
+    Increment = 5,
+    Suffix = "Speed",
+    CurrentValue = 1,
+    Callback = function(Value)
+        TargetWalkspeed = Value
+    end,    
+   })
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+            game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection * TargetWalkspeed/50)
+        end
+    end)
+end)
+
+
+RemoveTab:CreateToggle({
+	Name = "No Screech (its says callback error because rayfield is stupid",
+	CurrentValue = false,
+    Flag = "NoobTogglebruh",
+    Save = true
+})
+
+workspace.ChildAdded:Connect(function(Child)
+if Child.Name == "Screech" and Rayfield.Flags["NoobTogglebruh"].Value == true then
+        Child:Destroy()
+    end
+end)
